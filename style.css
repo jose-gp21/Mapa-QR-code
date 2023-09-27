@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4ffec;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.com-mapa-de-fundo {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: url('planta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    body, html {
+        overflow: hidden;
+    }
+
+    .com-mapa-de-fundo {
+        background-image: url('planta-rotate.png'); 
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
